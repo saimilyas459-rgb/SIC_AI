@@ -29,7 +29,7 @@ try:
     # Yeh line Streamlit ke Secrets section se key uthayegi
     api_key = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel("gemini-2.5-flash")
 except Exception as e:
     st.error("API Key missing! Please set GEMINI_API_KEY in Streamlit Secrets.")
     st.stop()
