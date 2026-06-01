@@ -40,8 +40,8 @@ if "messages" not in st.session_state:
 # Sidebar
 with st.sidebar:
     st.markdown("<h2 style='text-align: center; color: #38bdf8;'>SIC AI PANEL</h2>", unsafe_allow_html=True)
-    if os.path.exists("logo.png"):
-        st.image("logo.png", use_container_width=True)
+    if os.path.exists("icon.png"):
+        st.image("icon.png", use_container_width=True)
     
     if st.button("➕ New Chat"):
         st.session_state.messages = []
